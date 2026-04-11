@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PlushCV - One Page Layout
+% Vertical Flow: About -> Experience
+% Middle Row: Programming (45%) | Backend/Frontend/Systems (52%)
+% Footer Row: Education (60%) | Languages (40%)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{plushcv}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TITLE NAME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Harish Kumar}{}{Full Stack Software Engineer}{
+\contactline{
+    \href{https://harishkumarn.github.io/portfolio/}{visit}
+}{
+    \href{https://www.github.com/harishkumarn}{GitHub}
+}{
+    \href{https://www.linkedin.com/in/harish-kumar-794ab4165}{Linkedin}
+}{
+    \href{mailto:harishkr.1110@gmail.com}{harishkr.1110@gmail.com}
+}{
+    \href{tel:+919788095456}{+91 9788095456}
+}}
+
+\vspace{5pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TOP SECTIONS (FULL WIDTH)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{About}
+\fontsize{11.5pt}{14pt}\selectfont % Increased font and line height
+Software Engineer with experience building scalable, reliable systems across Cloud Services and Devices (Systems). Strong background in developing production-grade features with a focus on robustness and long-term maintainability. Proven team contributor with a track record of quickly ramping up on new technologies and delivering results in fast-paced environments. 
+
+\sectionsep
+
+\section{Experience}
+\fontsize{11.5pt}{13.5pt}\selectfont % Increased font
+
+\runsubsection{Amazon}
+\descript{| Software Development Engineer 2}
+\location{Nov 2024 – Current | Chennai, India}
+\begin{tightemize}
+\item Member of the \textbf{Amazon Kindle OS Platform} team, contributing to multiple high-impact initiatives across device platforms. 
+\item Played a key role in the Yocto toolchain upgrade from v1.7 to v4, resolving launch-blocking issues and delivering the upgrade on schedule. 
+\item Contributed to the 3rd-generation Kindle Scribe bring-up and launch, implementing features and fixing critical, customer-impacting bugs. 
+\item Designed and implemented a systematic on-field battery drain monitoring metrics dashboard, serving as a single source of truth for battery health analysis. 
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{Zoho Corporation}
+\descript{| Member of Technical Staff}
+\location{May 2019 – Nov 2024 | Chennai, India}
+\begin{tightemize}
+\item Full Stack developer for \textbf{Zoho's flagship enterprise CRM}, specializing in the Emails module.
+\item Revamped Email Sharing, developed REST APIs, and migrated legacy pages from Handlebars.js to Lyte (Ember.js). 
+\item Responsible for ZeptoMail (Zoho's ESP) product integration using Apache Ant.
+\item Single-handedly implemented a dynamic OAuth-based authentication token generation flow using Redis and JVM cache.
+\item Maintained Kafka queuing logic to process bulk emails and web-hook requests for tracking features.
+\item Owned Templates module, Mass Mailer, Email Sharing, and Authentication features.
+\end{tightemize}
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS SECTION (HORIZONTAL SPLIT)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\begin{minipage}[t]{0.45\textwidth}
+\subsection{Programming}
+\fontsize{11pt}{13pt}\selectfont % Increased font
+\textbf{Experienced}\\ Java \textbullet{} JavaScript \textbullet{} C/C++ \textbullet{} SQL \\ \textbf{Proficient}\\ Python \textbullet{} HTML \textbullet{} CSS \\
+\textbf{Familiar}\\ Scala \textbullet{} Golang
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.52\textwidth}
+\subsection{Backend, Frontend \& Systems}
+\fontsize{11pt}{13pt}\selectfont % Increased font
+\textbf{Backend}\\ Spring \textbullet{} Spring MVC \textbullet{} Spring Boot \textbullet{} Struts \textbullet{} JSP \textbullet{} Servlet \textbullet{} gRPC  \textbullet{} Redis \textbullet{} Kafka \textbullet{} Docker \textbullet{} Apache Ant \textbullet{} Maven \\
+\textbf{AWS}\\ Lambda \textbullet{} S3 \textbullet{} Cloud Watch \textbullet{} Glue \textbullet{} Athena \\
+\textbf{Frontend}\\ React \textbullet{} React Native \textbullet{} Ember JS \textbullet{} jQuery \\
+\textbf{Systems}\\ Yocto \textbullet{} BitBake \textbullet{} CMake \textbullet{} Git
+\end{minipage}
+
+\vspace{25pt} % Increased spacing to push content to bottom of page
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     FOOTER ROW (SPLIT)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% LEFT FOOTER: Education (60%)
+\begin{minipage}[t]{0.58\textwidth} 
+\section{Education}
+\fontsize{11pt}{13pt}\selectfont % Increased font
+\subsection{BE, Electronics and Communication Engineering}
+\descript{Rajalakshmi Engineering College}
+\location{Apr 2019 | Chennai, Tamil Nadu}
+\location{Cum. GPA: 8.2 / 10.0}
+\end{minipage} 
+\hfill
+% RIGHT FOOTER: Languages (38%)
+\begin{minipage}[t]{0.38\textwidth} 
+\section{Languages}
+\fontsize{11pt}{13pt}\selectfont % Increased font
+\textbf{Tamil} (Native / Bilingual) \\
+\textbf{English} (Professional Working)
+\end{minipage} 
+
+\end{document}
