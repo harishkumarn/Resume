@@ -1,0 +1,126 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PlushCV - One Page Layout
+% Vertical Flow: About -> Experience
+% Middle Row: Programming (45%) | Backend/Frontend/Systems (52%)
+% Footer Row: Education (60%) | Languages (40%)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{plushcv}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TITLE NAME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Harish Kumar}{}{Full Stack Software Engineer}{
+\contactline{
+    \href{https://harishkumarn.github.io/portfolio/}{visit}
+}{
+    \href{https://www.github.com/harishkumarn}{GitHub}
+}{
+    \href{https://www.linkedin.com/in/harish-kumar-794ab4165}{Linkedin}
+}{
+    \href{mailto:harishkr.1110@gmail.com}{harishkr.1110@gmail.com}
+}{
+    \href{tel:+919788095456}{+91 9788095456}
+}}
+
+\vspace{5pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TOP SECTIONS (FULL WIDTH)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{About}
+\fontsize{11.5pt}{14pt}\selectfont % Increased font and line height
+Software Engineer with 7 years experience building scalable, reliable systems across Cloud Services and Systems. Strong background in developing production-grade features with a focus on robustness and long-term maintainability. Proven team contributor with a track record of quickly ramping up on new technologies and delivering results in fast-paced environments. 
+
+\sectionsep
+
+\section{Experience}
+\fontsize{11.5pt}{13.5pt}\selectfont % Increased font
+
+\runsubsection{Amazon}
+\descript{| Software Development Engineer 2}
+\location{Nov 2024 – Current | Chennai, India}
+\begin{tightemize}
+\item Member of the \textbf{Amazon Kindle OS Platform} team, contributing to multiple high-impact initiatives across device platforms. 
+\item Played a key role in the Yocto tool-chain upgrade from v1.7 to v4, deployed across 50 million devices. Resolved a launch-blocking book download latency regression caused by the OpenSSL v1 to v3 migration by conducting deep-dive on the full SSL/TLS stack and delivering an end-to-end root cause analysis with fix.
+\item Diagnosed and resolved an intermittent "last read read" sync failure in Kindle, which was widely being reported by hundreds of users in public forums like Reddit, by tracing the root cause to UDP packet loss in the device to server communication path, and coordinated a cross-team fix with Sync team to reduce false-positive device-offline detection. 
+\item Delivered multiple feature implementations while also resolving numerous crashes, non-functional issues for the 3rd Gen Kindle Scribe device bring-up and launch.
+\item Implemented a chunk-by-chunk system update binary copy mechanism to optimize space utilization and saved up-to 350MB of storage for the 3rd Gen Kindle Scribe devices.
+\item Implemented dark mode functionality in 3rd Gen Kindle Color Scribe in Webkit based apps inside settings.
+\item Took full ownership and coordinated with Legal and UX teams and implemented the e-label hardware compliance page for 3rd Gen Scribe devices.
+\item Designed and implemented an on-field battery drain monitoring dashboard with new device-level metrics, enabling data-driven decision-making on critical power drain issues reported by users.
+\item Re-architected the Kindle factory reset mechanism, replacing the legacy userspace wipe with an Initramfs partition wipe flow for improved reliability ans security, leveraging Agentic AI-assisted development.
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{Zoho Corporation}
+\descript{| Member of Technical Staff}
+\location{May 2019 – Nov 2024 | Chennai, India}
+\begin{tightemize}
+\item Full Stack developer for \textbf{Zoho's flagship enterprise CRM}, specializing in the Emails module.
+\item Revamped Email Sharing, a core security feature governing mailbox sharing rules in Zoho CRM, developed REST APIs, migrated legacy Handlebars.js to Ember.js and introduced role-based sharing rule preferences, which featured as a key release on Zoho CRM's 2021 launch page.
+\item DRI for ZeptoMail ( Zoho' ESP) product integration inside Zoho CRM, owning cross-product communication, authentication, authorization, and all outbound email delivery handling a daily volume of ~2 million emails.
+\item Owned the email tracking feature in Zoho CRM, enabling users to monitor email opens, link clicks, and spam reports to measure customer engagement.
+\item Independently designed and implemented a dynamic OAuth token generation flow for a distributed server environment, leveraging Redis and JVM caching with race condition handling to ensure reliable authentication across nodes.
+\item Developed Email Footer functionality which is a CASL compliance standard and allows users to set customized email footers for their emails via a WYSIWYG editor.
+\item Owned the Mass-Mailer feature, enabling users to send and schedule batch emails at scale using Kafka for high-volume message processing.
+\item Owned and led the end-to-end revamp of the Email and Inventory templates module, mentoring 2 junior developers. Migrated WYSIWYG template editor and Drag-n-Drop template editor (100K+ DAU) from JSP to Ember.js, designed new REST API contracts, and built a criteria-based dynamic template editor enabling flexible email customization. 
+\end{tightemize}
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS SECTION (HORIZONTAL SPLIT)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\begin{minipage}[t]{0.45\textwidth}
+\subsection{Programming}
+\fontsize{11pt}{13pt}\selectfont % Increased font
+\textbf{Experienced}\\ Java \textbullet{} JavaScript \textbullet{} C/C++ \textbullet{} SQL \\ \textbf{Proficient}\\ Python \textbullet{} HTML \textbullet{} CSS \\
+\textbf{Familiar}\\ Scala \textbullet{} Golang
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.52\textwidth}
+\subsection{Backend, Frontend \& Systems}
+\fontsize{11pt}{13pt}\selectfont % Increased font
+\textbf{Backend}\\ Spring \textbullet{} Spring MVC \textbullet{} Spring Boot \textbullet{} Struts \textbullet{} JSP \textbullet{} Servlet \textbullet{} gRPC  \textbullet{} Redis \textbullet{} Kafka \textbullet{} Docker \textbullet{} Apache Ant \textbullet{} Maven \\
+\textbf{AWS}\\ Lambda \textbullet{} S3 \textbullet{} Cloud Watch \textbullet{} Glue \textbullet{} Athena \\
+\textbf{Frontend}\\ React \textbullet{} React Native \textbullet{} Ember JS \textbullet{} jQuery \\
+\textbf{Systems}\\ Yocto \textbullet{} BitBake \textbullet{} CMake \textbullet{} Git
+\textbf{Frameworks}\\ Jira \textbullet{} Scrum \textbullet{} SDLC \textbullet{} Agentic AI
+\end{minipage}
+
+\vspace{25pt} % Increased spacing to push content to bottom of page
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     FOOTER ROW (SPLIT)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% LEFT FOOTER: Education (60%)
+\begin{minipage}[t]{0.58\textwidth} 
+\section{Education}
+\fontsize{11pt}{13pt}\selectfont % Increased font
+\subsection{BE, Electronics and Communication Engineering}
+\descript{Rajalakshmi Engineering College}
+\location{Apr 2019 | Chennai, Tamil Nadu}
+\end{minipage} 
+\hfill
+% RIGHT FOOTER: Languages (38%)
+\begin{minipage}[t]{0.38\textwidth} 
+\section{Languages}
+\fontsize{11pt}{13pt}\selectfont % Increased font
+\textbf{Tamil}  \\
+\textbf{English}
+\end{minipage} 
+
+\end{document}
