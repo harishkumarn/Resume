@@ -1,0 +1,114 @@
+% https://www.overleaf.com/project/69ea4b35f98562d23206e104
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item \small{#1 \vspace{-2pt}}
+}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Harish Kumar}} & Email: \href{mailto:harishkr.1110@gmail.com}{harishkr.1110@gmail.com}\\
+  \href{https://github.com/harishkumarn}{Github} \quad
+  \href{https://www.linkedin.com/in/harish-kumar-794ab4165}{LinkedIn} & Mobile: +91-9788095456 \\
+\end{tabular*}
+
+%-----------SUMMARY-----------------
+\section{Summary}
+Backend / Systems Engineer with 7 years of experience building scalable distributed systems. Currently SDE 2 working on large-scale device platforms (50M+ devices). Strong in Java, distributed systems, performance optimization and algorithms.
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\begin{itemize}[leftmargin=*]
+
+\resumeSubheading
+{Amazon}{Chennai, India}
+{Software Development Engineer 2}{Nov 2024 – Present}
+\begin{itemize}
+\resumeItem{Member of the Amazon Kindle OS Platform team, contributing to multiple high-impact initiatives across device
+platforms.}
+\resumeItem{Spearheaded Yocto toolchain upgrade from v1.7 to v4 across 50M+ devices, eliminating a critical latency regression caused by OpenSSL v1 to v3 migration through in-depth analysis..}
+\resumeItem{Diagnosed and resolved intermittent Kindle sync failure (“last read” issue) potentially impacting all active devices by identifying UDP packet loss in device-server communication and driving a cross-team fix to reduce false offline detection.}
+\resumeItem{Delivered multiple features and resolved critical crashes and non-functional issues during 3rd Gen Kindle Scribe bring-up and launch, ensuring production readiness.}
+\resumeItem{Designed and implemented chunk-based system update mechanism, optimizing storage utilization and saving up to 350MB per device on 3rd Gen Kindle Scribe.}
+\resumeItem{Implemented dark mode support for WebKit-based applications in Kindle device settings for 3rd Gen Kindle Color Scribe.}
+\resumeItem{Designed and built device-level battery drain monitoring dashboard with new telemetry metrics, enabling data-driven debugging of power issues across millions of active Kindle devices (Scribe, Paperwhite)}
+\resumeItem{Re-architected factory reset mechanism by replacing legacy userspace wipe with Initramfs-based partition wipe, improving system reliability and security.}
+\end{itemize}
+
+\resumeSubheading
+{Zoho Corporation}{Chennai, India}
+{Member of Technical Staff}{May 2019 – Nov 2024}
+\begin{itemize}
+\resumeItem{Developed and maintained features for Zoho CRM (flagship product), specializing in the Emails module with a focus on scalability and reliability.}
+\resumeItem{Revamped Email Sharing (core security feature) by designing REST APIs, migrating from Handlebars.js to Ember.js, and introducing role-based access control, supporting thousands of active users and contributing to a key Zoho CRM 2021 release.}
+\resumeItem{Led integration of ZeptoMail (email service platform) into Zoho CRM as DRI, owning cross-service communication, authentication, authorization, and outbound email delivery handling 2M+ emails/day.}
+\resumeItem{Owned and enhanced email tracking system processing ~1M events/day, enabling real-time insights into email opens, link clicks, and spam reports for customer engagement analytics.}
+\resumeItem{Designed and implemented distributed OAuth token generation system using Redis and JVM caching, ensuring race-condition-safe authentication across nodes, supporting 2M+ email API calls/day and 3M+ file upload requests/day.}
+\resumeItem{Developed CASL-compliant email footer feature with WYSIWYG editor, enabling customizable and compliant email communication.}
+\resumeItem{Owned Mass Mailer system using Kafka for high-throughput batch email delivery, enforcing tenant-level quotas of 250–10K emails/day per account.}
+\resumeItem{Led end-to-end revamp of Email and Inventory Templates module, mentoring 2 engineers and driving system design and implementation.}
+\resumeItem{Migrated high-traffic (100K+ DAU) WYSIWYG and drag-and-drop template editors from JSP to Ember.js, designed new REST API contracts, and built criteria-based dynamic templating system for flexible email customization.}
+\end{itemize}
+
+\end{itemize}
+
+%-----------SKILLS-----------------
+\section{Skills}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Languages:} Java, JavaScript/ TypeScript/ Node.js, C/C++, Python, SQL, Scala, Golang
+\item \textbf{Backend/Systems:} Distributed Systems, Kafka, Redis, MySQL, gRPC, Spring Boot, Spring MVC
+\item \textbf{Frontend:} React, React Native, Ember.js, HTML/CSS
+\item \textbf{Infrastructure:} AWS (S3, Lambda, ECR), Docker
+\item \textbf{Systems:} Yocto, Linux, Bitbake
+\item \textbf{Methodologies:} Scrum, SDLC 
+\item \textbf{Tools:} Jira \textbf{AI/ LLM Tools:} Agentic AI 
+\end{itemize}
+
+%-----------EDUCATION-----------------
+\section{Education}
+\begin{itemize}[leftmargin=*]
+\resumeSubheading
+{Rajalakshmi Engineering College}{Chennai, India}
+{B.E. Electronics and Communication Engineering}{2019}
+\end{itemize}
+
+\end{document}
